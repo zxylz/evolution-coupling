@@ -2,7 +2,7 @@ import argparse
 # from typing_extensions import ParamSpec
 import handlehistory
 import csv2tojson
-import hcp
+import HCP
 import AssociationRule
 import follow
 import Distance
@@ -25,7 +25,7 @@ csvFilePath=""
 
 if args.method=='HCP':
     historyHandled=handlehistory.first_handle(args.filePath)
-    csvFilePath=hcp.GetCochange(historyHandled,args.support,args.confidence)
+    csvFilePath=HCP.GetCochange(historyHandled,args.support,args.confidence)
     csv2tojson.CreateJson("HCP",csvFilePath)
 elif args.method=='follow':
     csvFilePath=follow.GetCochange(args.filePath,args.support,args.confidence)
