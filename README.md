@@ -1,3 +1,6 @@
+先使用pip install -r requirements.txt 安装需要的包
+
+
 使用AssociationRule、HCP、Distance 方法步骤
 
 1、需要先使用命令
