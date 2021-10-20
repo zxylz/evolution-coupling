@@ -445,5 +445,6 @@ def GetCochange(filePath,support,confidence):
                     # csv_write.writerow((FileNum[i],FileNum[j],FileMatrixHCP[i,j]))
                     csv_write.writerow((FileNum[i],FileNum[j],FileMatrix[i,j]))
     f.close()
+    return filePath2
                 
 # GetCochange('D:\影响分析\gajim\historyHandled.txt',3,0.2)
