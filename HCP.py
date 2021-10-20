@@ -232,6 +232,7 @@ def handleHistory(filePath):
 
 def handelSameCommit():
     #commitList里面有重复的,和超过10个.py 文件的commit
+    global fileChange
     for (key,value) in fileChange.items():
         value=list(set(value)-set(MoreFileCommit))
         value=list(set(value))
