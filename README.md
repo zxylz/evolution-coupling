@@ -32,7 +32,7 @@ git log  --pretty=format:'commit %H(%ad)%nauthor:%an%ndescription:%s'  --date=fo
 1、使用命令 main.py  --filePath --method --support --confidence 
 
 
---filePath 是项目路径
+--filePath 是项目的git仓库
 
 --method 设置为follow
 
