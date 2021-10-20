@@ -62,7 +62,7 @@ def GetCochange(fileDir,support,confidence):
                 pass
         fileNum=fileNum+1  
     
-    filePath=fileDir+r'\follow(%d-%.1f)' %(Threshold,Threshold2)
+    filePath=fileDir+r'\follow(%d-%.1f).csv' %(Threshold,Threshold2)
     with open(filePath,'w',newline='') as f:
             csv_write= csv.writer(f)
             csv_head = ["file1","file2","count"]
