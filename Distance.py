@@ -279,9 +279,10 @@ def relatedChanges1(commitList_1,commitList_2):
             total_seconds = (time_1 - time_2).total_seconds()
           
             total_hours = (abs(total_seconds))/3600
-            if (abs(int(j.getIndex())-int(i.getIndex()))-1) <= CommitDistance and abs(total_hours)<= TimeDistance:               
-                count +=1
-                commmitPairList.append(commitPair(i,j))       
+            if (abs(int(j.getIndex())-int(i.getIndex()))-1) <= CommitDistance and abs(total_hours)<= TimeDistance:        
+                if isUnique(commmitPairList,i,j):
+                    count +=1
+                    commmitPairList.append(commitPair(i,j))       
     return count  
 
 
